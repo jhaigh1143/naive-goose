@@ -3,7 +3,10 @@
     "@babel/cli": "^7.12.10",
     "@babel/core": "^7.12.10",
     "@babel/preset-flow": "^7.12.1",
-    "@babel/preset-react": "^7.12.10"
+    "@babel/preset-react": "^7.12.10",
+    "prettier": "2.2.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "style-sheet": "^4.0.4"
+  }
 }

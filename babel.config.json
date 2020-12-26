@@ -2,5 +2,8 @@
     "presets": [
         "@babel/preset-react",
         "@babel/preset-flow"
+    ],
+    "plugins": [
+    "style-sheet/babel"
     ]
 }
