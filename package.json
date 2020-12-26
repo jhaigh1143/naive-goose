@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "flow-bin": "^0.141.0",
+    "flow-remove-types": "^2.141.0"
+  }
+}
