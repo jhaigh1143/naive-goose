@@ -1,6 +1,6 @@
-import logo from './logo.svg';
-import './App.css';
-import { StyleSheet, StyleResolver } from 'style-sheet';
+import logo from "./logo.svg";
+import "./App.css";
+import { StyleSheet, StyleResolver } from "style-sheet";
 
 function App() {
   return (
@@ -8,8 +8,8 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p
-        className={StyleResolver.resolve([styles.rule])}
-        //styles={[styles.rule]}
+          className={StyleResolver.resolve([styles.rule])}
+          //styles={[styles.rule]}
         >
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -28,13 +28,13 @@ function App() {
 
 const styles = StyleSheet.create({
   rule: {
-    display: 'block',
-    backgroundColor: 'orange',
-    color: 'green',
-    '&:hover': {
-    backgroundColor: 'red',
-      color: 'white'
-    }
+    display: "block",
+    backgroundColor: "orange",
+    color: "green",
+    "&:hover": {
+      backgroundColor: "red",
+      color: "white",
+    },
   },
 });
 
