@@ -1,6 +1,9 @@
 {
   "devDependencies": {
-    "flow-bin": "^0.141.0",
-    "flow-remove-types": "^2.141.0"
-  }
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/preset-flow": "^7.12.1",
+    "@babel/preset-react": "^7.12.10"
+  },
+  "dependencies": {}
 }

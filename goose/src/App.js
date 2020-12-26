@@ -1,19 +1,13 @@
-// @flow strict
-
-import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-type Props = {
-  name: string
-}
-function App(props: Props):React$Node {
+function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> {props.name}.
+          Edit <code>src/App.js</code> and save to reload.
         </p>
         <a
           className="App-link"
