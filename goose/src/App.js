@@ -37,14 +37,14 @@ function Users() {
   return <h2>Users</h2>;
 }
 
-function App() {
+function App():React$Node {
   return (
     <Router>
       <div>
         <nav>
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/">Home {2 + 3}</Link>
             </li>
             <li>
               <Link to="/about">About</Link>
