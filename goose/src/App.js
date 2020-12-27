@@ -37,14 +37,17 @@ function Users() {
   return <h2>Users</h2>;
 }
 
-function App() : React$Node {
+type Props = {
+  name: string,
+}
+function App(props: Props) : React$Node {
   return (
     <Router>
       <div>
         <nav>
           <ul>
             <li>
-              <Link to="/">Home {2 + 3}</Link>
+              <Link to="/">{props.nasme} {2 + 3}</Link>
             </li>
             <li>
               <Link to="/about">About</Link>
