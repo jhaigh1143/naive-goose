@@ -1,5 +1,5 @@
 // @flow
-import React from 'react';
+import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import { StyleSheet, StyleResolver } from "style-sheet";
@@ -37,7 +37,7 @@ function Users() {
   return <h2>Users</h2>;
 }
 
-function App():React$Node {
+function App() : React$Node {
   return (
     <Router>
       <div>
