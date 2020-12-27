@@ -39,15 +39,17 @@ function Users() {
 
 type Props = {
   name: string,
-}
-function App(props: Props) : React$Node {
+};
+function App(props: Props): React$Node {
   return (
     <Router>
       <div>
         <nav>
           <ul>
             <li>
-              <Link to="/">{props.nasme} {2 + 3}</Link>
+              <Link to="/">
+                {props.nasme} {2 + 3}
+              </Link>
             </li>
             <li>
               <Link to="/about">About</Link>
