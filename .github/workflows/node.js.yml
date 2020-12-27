@@ -16,12 +16,6 @@ jobs:
         cmd: install
     - uses: borales/actions-yarn@v2.0.0
       with:
-        cmd: flow version
-    - uses: borales/actions-yarn@v2.0.0
-      with:
-        cmd: flow # will run `flow` command
-    - uses: borales/actions-yarn@v2.0.0
-      with:
         cmd: goosebuild # will run `yarn goosebuild` command
     - uses: borales/actions-yarn@v2.0.0
       with:
