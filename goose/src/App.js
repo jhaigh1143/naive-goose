@@ -48,7 +48,7 @@ function App(props: Props): React$Node {
           <ul>
             <li>
               <Link to="/">
-                {props.nasme} {2 + 3}
+                {props.name} {2 + 3}
               </Link>
             </li>
             <li>
