@@ -9,5 +9,12 @@
   },
   "dependencies": {
     "style-sheet": "^4.0.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "goosebuild": "cd ./goose && yarn build",
+    "goosetest": "cd ./goose && yarn test",
+    "eject": "react-scripts eject",
+    "flow": "flow"
   }
 }
