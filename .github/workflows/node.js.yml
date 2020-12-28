@@ -7,7 +7,7 @@ on: [push, pull_request] # Run on Push and Pull Requests
 
 jobs:
   build:
-    name: TestAsb
+    name: www-yarn-suite
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
@@ -15,7 +15,7 @@ jobs:
       with:
         node-version: '10.x'
     - run: yarn install
-    - run: yarn gooseinstall
-    - run: yarn flow
-    - run: yarn goosebuild
-    - run: yarn goosetest
+    - run: yarn prebuild
+    - run: yarn lint
+    - run: yarn build
+    - run: yarn test

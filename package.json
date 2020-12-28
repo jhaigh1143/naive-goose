@@ -15,7 +15,7 @@
     "start": "cd ./goose && yarn start",
     "prebuild": "cd ./goose && yarn install",
     "lint": "flow && prettier --check .",
-    "build": "cd ./goose && yarn install",
-    "test": "cd ./goose && yarn test",
+    "build": "cd ./goose && yarn build",
+    "test": "cd ./goose && yarn test"
   }
 }
