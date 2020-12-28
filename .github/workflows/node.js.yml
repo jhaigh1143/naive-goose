@@ -16,6 +16,6 @@ jobs:
         node-version: '10.x'
     - run: yarn install
     - run: yarn gooseinstall
+    - run: yarn flow
     - run: yarn goosebuild
     - run: yarn goosetest
-    - run: yarn flow
