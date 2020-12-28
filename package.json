@@ -12,11 +12,10 @@
     "style-sheet": "^4.0.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "gooseinstall": "cd ./goose && yarn install",
-    "goosebuild": "cd ./goose && yarn build",
-    "goosetest": "cd ./goose && yarn test",
-    "eject": "react-scripts eject",
-    "flow": "flow"
+    "start": "cd ./goose && yarn start",
+    "prebuild": "cd ./goose && yarn install",
+    "lint": "flow && prettier --check .",
+    "build": "cd ./goose && yarn install",
+    "test": "cd ./goose && yarn test",
   }
 }
