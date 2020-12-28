@@ -14,8 +14,10 @@
   "scripts": {
     "start": "cd ./goose && yarn start",
     "prebuild": "cd ./goose && yarn install",
-    "lint": "flow && prettier --check .",
+    "lint": "prettier --write .",
     "build": "cd ./goose && yarn build",
-    "test": "cd ./goose && yarn test"
+    "test": "cd ./goose && yarn test",
+    "prettier": "prettier --check .",
+    "flow": "flow"
   }
 }
