@@ -4,6 +4,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import { StyleSheet, StyleResolver } from "style-sheet";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import LettersView from "./LettersView";
 
 function Home() {
   return (
@@ -16,13 +17,14 @@ function Home() {
         >
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <LettersView />
         <a
           className="App-link"
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          LearAAAAn React
         </a>
       </header>
     </div>
@@ -48,7 +50,7 @@ function App(props: Props): React$Node {
           <ul>
             <li>
               <Link to="/">
-                {props.nAame} {2 + 3}
+                {props.name} {2 + 3}
               </Link>
             </li>
             <li>
