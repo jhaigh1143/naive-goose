@@ -17,3 +17,5 @@ jobs:
     - run: yarn install
     - run: yarn gooseinstall
     - run: yarn goosebuild
+    - run: yarn goosetest
+    - run: yarn flow
