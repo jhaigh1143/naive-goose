@@ -2,6 +2,7 @@
   "name": "goose",
   "version": "0.1.0",
   "private": true,
+  "license": "MIT",
   "homepage": "/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
