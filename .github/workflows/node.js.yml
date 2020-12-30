@@ -3,7 +3,7 @@
 
 name: www-yarn-suite
 
-on: [push, pull_request] # Run on Push and Pull Requests
+on: [push] # Run on Push and Pull Requests
 
 jobs:
   build:
