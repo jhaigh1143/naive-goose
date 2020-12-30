@@ -40,7 +40,7 @@ function Users() {
 }
 
 type Props = {
-  name: string,
+  name: Number,
 };
 function App(props: Props): React$Node {
   return (
@@ -50,7 +50,7 @@ function App(props: Props): React$Node {
           <ul>
             <li>
               <Link to="/">
-                {props.name} {2 + 3}
+                {props.name*7} {2 + 3}
               </Link>
             </li>
             <li>
