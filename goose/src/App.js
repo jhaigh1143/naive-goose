@@ -1,7 +1,6 @@
 // @flow
 import React from "react";
 import logo from "./logo.svg";
-import "./App.css";
 import { StyleSheet, StyleResolver } from "style-sheet";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import LettersView from "./LettersView";
@@ -9,17 +8,18 @@ import LettersView from "./LettersView";
 function Home() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p
-          className={StyleResolver.resolve([styles.rule])}
-          //styles={[styles.rule]}
-        >
+      <header className={StyleResolver.resolve([styles.appHeader])}>
+        <img
+          src={logo}
+          className={StyleResolver.resolve([styles.appLogo])}
+          alt="logo"
+        />
+        <p className={StyleResolver.resolve([styles.rule])}>
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <LettersView />
         <a
-          className="App-link"
+          className={StyleResolver.resolve([styles.appLink])}
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
@@ -81,6 +81,21 @@ function App(props: Props): React$Node {
 }
 
 const styles = StyleSheet.create({
+  appLogo: {
+    height: "40vmin",
+    pointerEvents: "none",
+    animation: "App-logo-spin infinite 20s linear",
+  },
+  appHeader: {
+    backgroundColor: "#282c34",
+    minHeight: "100vh",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+    fontSize: "calc(10px + 2vmin)",
+    color: "white",
+  },
   rule: {
     display: "block",
     backgroundColor: "orange",
@@ -89,6 +104,9 @@ const styles = StyleSheet.create({
       backgroundColor: "red",
       color: "white",
     },
+  },
+  appLink: {
+    color: "#61dafb",
   },
 });
 
