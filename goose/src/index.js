@@ -4,10 +4,23 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import { StyleSheet, StyleResolver } from "style-sheet";
+
+const styles = StyleSheet.create({
+  app: {
+    fontFamily: `-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif`,
+    WebkitFontSmoothing: "antialiased",
+    MozOsxFontSmoothing: "grayscale",
+  },
+});
 
 ReactDOM.render(
   <React.StrictMode>
-    <App name="MyName" />
+    <div className={StyleResolver.resolve([styles.app])}>
+      <App name="MyName" />
+    </div>
   </React.StrictMode>,
   document.getElementById("root")
 );
