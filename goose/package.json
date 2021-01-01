@@ -9,8 +9,7 @@
     "@babel/core": "^7.12.10",
     "@babel/preset-flow": "^7.12.1",
     "@babel/preset-react": "^7.12.10",
-    "flow-bin": "^0.141.0",
-    "prettier": "2.2.1"
+    "flow-bin": "^0.141.0"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
@@ -21,7 +20,8 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.0",
     "style-sheet": "^4.0.4",
-    "web-vitals": "^0.2.4"
+    "web-vitals": "^0.2.4",
+    "prettier": "2.2.1"
   },
   "scripts": {
     "start": "react-scripts start",
