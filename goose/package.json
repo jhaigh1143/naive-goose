@@ -3,7 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "license": "MIT",
-  "homepage": "/",
+  "homepage": "./src/",
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/preset-flow": "^7.12.1",
+    "@babel/preset-react": "^7.12.10",
+    "flow-bin": "^0.141.0",
+    "prettier": "2.2.1"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -19,7 +27,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "CI=true react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "lint": "prettier --check . && flow"
   },
   "eslintConfig": {
     "extends": [

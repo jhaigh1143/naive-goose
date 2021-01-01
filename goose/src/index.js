@@ -1,9 +1,10 @@
 // @flow
+
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
-import App from "./App";
-import reportWebVitals from "./reportWebVitals";
+import "./_legacy/index.css";
+import App from "./app/App.react";
+import reportWebVitals from "./_legacy/reportWebVitals";
 import { StyleSheet, StyleResolver } from "style-sheet";
 
 const styles = StyleSheet.create({

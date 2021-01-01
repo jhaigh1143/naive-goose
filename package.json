@@ -1,23 +1,10 @@
 {
   "license": "MIT",
-  "devDependencies": {
-    "@babel/cli": "^7.12.10",
-    "@babel/core": "^7.12.10",
-    "@babel/preset-flow": "^7.12.1",
-    "@babel/preset-react": "^7.12.10",
-    "flow-bin": "^0.141.0",
-    "prettier": "2.2.1"
-  },
-  "dependencies": {
-    "style-sheet": "^4.0.4"
-  },
   "scripts": {
     "start": "cd ./goose && yarn start",
-    "prebuild": "cd ./goose && yarn install",
-    "lint": "prettier --write .",
     "build": "cd ./goose && yarn build",
     "test": "cd ./goose && yarn test",
-    "prettier": "prettier --check .",
-    "flow": "flow"
+    "lint": "cd ./goose && prettier --check . && flow",
+    "flow": "cd ./goose && flow"
   }
 }
