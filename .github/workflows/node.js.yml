@@ -15,8 +15,6 @@ jobs:
       with:
         node-version: '10.x'
     - run: yarn install
-    - run: yarn prebuild
-    - run: yarn flow
-    - run: yarn prettier
+    - run: yarn lint
     - run: yarn build
     - run: yarn test
