@@ -1,6 +1,7 @@
 {
   "license": "MIT",
   "scripts": {
+    "goose": "cd ./goose && yarn install",
     "start": "cd ./goose && yarn start",
     "build": "cd ./goose && yarn build",
     "test": "cd ./goose && yarn test",
