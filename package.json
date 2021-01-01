@@ -5,7 +5,7 @@
     "start": "cd ./goose && yarn start",
     "build": "cd ./goose && yarn build",
     "test": "cd ./goose && yarn test",
-    "lint": "cd ./goose && prettier --check . && flow",
-    "flow": "cd ./goose && flow"
+    "lint": "cd ./goose && yarn prettier --check . && yarn flow",
+    "flow": "cd ./goose && yarn flow"
   }
 }

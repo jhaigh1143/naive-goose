@@ -27,7 +27,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "CI=true react-scripts test --env=jsdom",
-    "lint": "prettier --check . && flow"
+    "lint": "prettier --check . && flow",
+    "prettier": "prettier --check .",
+    "flow": "flow"
   },
   "eslintConfig": {
     "extends": [
