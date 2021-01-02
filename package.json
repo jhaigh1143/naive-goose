@@ -7,5 +7,6 @@
     "test": "cd ./goose && yarn test",
     "lint": "cd ./goose && yarn prettier --check . && yarn flow",
     "flow": "cd ./goose && yarn flow"
-  }
+  },
+  "devDependencies": {}
 }
