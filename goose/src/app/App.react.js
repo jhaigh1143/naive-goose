@@ -3,7 +3,7 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Home from "./Home.react";
-import Users from "./userfeed/Users.react";
+import BrowseUsers from "./userfeed/BrowseUsers.react";
 
 const pages: Array<{|
   title: string,
@@ -18,7 +18,7 @@ const pages: Array<{|
   {
     title: "Users",
     path: "/users",
-    component: <Users />,
+    component: <BrowseUsers />,
   },
 ];
 

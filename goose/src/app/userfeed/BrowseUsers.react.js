@@ -27,13 +27,23 @@ const users: Array<UserData> = [
   },
 ];
 
-export default function Users(): React$Node {
+export default function BrowseUsers(): React$Node {
   return (
     <div>
       <h1>Users</h1>
-      {users.map((u) => (
-        <UserCard key={u.name} user={u} />
-      ))}
+      <div
+        style={{
+          display: "flex",
+          flexFlow: "row wrap",
+          alignItems: "flex-start",
+          alignContent: "flex-start",
+          justifyContent: "flex-start",
+        }}
+      >
+        {users.map((u) => (
+          <UserCard key={u.name} user={u} />
+        ))}
+      </div>
     </div>
   );
 }
