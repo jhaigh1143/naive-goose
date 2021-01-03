@@ -31,10 +31,7 @@ const styles = StyleSheet.create({
   },
   subContainer: {
     maxWidth: "24rem",
-    paddingTop: "1.5rem",
-    paddingBottom: "1.5rem",
-    paddingLeft: "0.75rem",
-    paddingRight: "0.75rem",
+    padding: "0.5rem",
   },
   bordered: {
     backgroundColor: "#fff",
