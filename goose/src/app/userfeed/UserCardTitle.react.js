@@ -9,7 +9,9 @@ export default function UserCardTitle(): React$Node {
         Detached house • 5y old
       </p>
       <p className={StyleResolver.resolve([styles.h1])}>$750,000</p>
-      <p className={StyleResolver.resolve([styles.fontGrey])}>742 Evergreen Terrace</p>
+      <p className={StyleResolver.resolve([styles.fontGrey])}>
+        742 Evergreen Terrace
+      </p>
     </div>
   );
 }

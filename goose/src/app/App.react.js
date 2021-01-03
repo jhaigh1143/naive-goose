@@ -3,7 +3,7 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Home from "./Home.react";
-import Users from "./Users.react";
+import Users from "./userfeed/Users.react";
 
 const pages: Array<{|
   title: string,
