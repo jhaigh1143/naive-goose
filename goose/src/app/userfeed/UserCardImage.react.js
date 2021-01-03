@@ -2,15 +2,15 @@
 import React from "react";
 import { StyleSheet, StyleResolver } from "style-sheet";
 
-export default function UserCardImage(): React$Node {
+export default function UserCardImage({ url }: { url: ?string }): React$Node {
+  const style =
+    url == null
+      ? { backgroundColor: "grey" }
+      : {
+          backgroundImage: `url(${url})`,
+        };
   return (
-    <div
-      className={StyleResolver.resolve([styles.container])}
-      style={{
-        backgroundImage:
-          "url(https://images.unsplash.com/photo-1475855581690-80accde3ae2b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80)",
-      }}
-    >
+    <div className={StyleResolver.resolve([styles.container])} style={style}>
       <div className={StyleResolver.resolve([styles.header])}>
         <svg
           className={StyleResolver.resolve([styles.image])}

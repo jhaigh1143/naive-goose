@@ -2,13 +2,13 @@
 import React from "react";
 import { StyleSheet, StyleResolver } from "style-sheet";
 
-export default function UserCardTitle(): React$Node {
+export default function UserCardTitle({ name }: { name: string }): React$Node {
   return (
     <div className={StyleResolver.resolve([styles.container])}>
       <p className={StyleResolver.resolve([styles.h3, styles.fontGrey])}>
         Detached house • 5y old
       </p>
-      <p className={StyleResolver.resolve([styles.h1])}>$750,000</p>
+      <p className={StyleResolver.resolve([styles.h1])}>{name}</p>
       <p className={StyleResolver.resolve([styles.fontGrey])}>
         742 Evergreen Terrace
       </p>
