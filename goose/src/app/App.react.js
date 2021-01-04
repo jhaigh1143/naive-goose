@@ -4,6 +4,7 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Home from "./Home.react";
 import BrowseUsers from "./userfeed/BrowseUsers.react";
+import firebase from "./firebase";
 
 const pages: Array<{|
   title: string,
