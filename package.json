@@ -8,5 +8,6 @@
     "lint": "cd ./goose && yarn prettier --check . && yarn flow",
     "flow": "cd ./goose && yarn flow"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "dependencies": {}
 }

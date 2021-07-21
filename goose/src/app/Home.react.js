@@ -23,7 +23,7 @@ export default function Home(): React$Node {
           target="_blank"
           rel="noopener noreferrer"
         >
-          LearAAAAn React
+          Learn React
         </a>
       </header>
     </div>

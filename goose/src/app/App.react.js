@@ -2,8 +2,7 @@
 
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import Home from "./Home.react";
-import BrowseUsers from "./userfeed/BrowseUsers.react";
+import Paperbase from "./Paperbase.react";
 import firebase from "./firebase";
 
 const pages: Array<{|
@@ -14,39 +13,25 @@ const pages: Array<{|
   {
     title: "Home",
     path: "/",
-    component: <Home />,
+    component: <Paperbase />,
   },
   {
-    title: "Users",
+    title: "UseArs",
     path: "/users",
-    component: <BrowseUsers />,
+    component: <></>,
   },
 ];
 
 export default function App(props: {| name: string |}): React$Node {
   return (
     <Router>
-      <div>
-        <nav>
-          <ul>
-            {pages.map(({ path, title }) => (
-              <li key={path}>
-                <Link to={path}>{title}</Link>
-              </li>
-            ))}
-          </ul>
-        </nav>
         <Switch>
           {pages.map(({ path, component }) => (
             <Route exact key={path} path={path}>
               {component}
             </Route>
           ))}
-          <Route path="/">
-            <Home />
-          </Route>
         </Switch>
-      </div>
     </Router>
   );
 }
